@@ -6,7 +6,7 @@ def gauss_jordan(M, ligne, colonne):
     # Entrée des données dans la matrice
     for i in range(ligne):
         for j in range(colonne + 1):
-            elt = int(input(f"entrez l'élément M[{i + 1},{j + 1}]=".format()))
+            elt = int(input(f"Entrez l'élément M[{i + 1},{j + 1}]=".format()))
             M[i, j] = elt
 
     for i in range(ligne):
@@ -23,10 +23,3 @@ def gauss_jordan(M, ligne, colonne):
     for i in range(len(x)):
         print(f"x[{i}] = {x[i]}".format())
 
-
-A = np.array([
-    [1, 2, -1],
-    [2, 1, 1],
-    [1, 0, 2]
-])
-b = [5, 10, 0]

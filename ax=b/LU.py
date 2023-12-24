@@ -10,7 +10,7 @@ def LU(M, ligne, B):
     # decomposition de la matrice
     for i in range(ligne):
         if U[i, i] == 0:
-            print("division par zero détectée")
+            print("Division par zero détectée")
             return 0
         for j in range(i + 1, ligne):
             L[j, i] = U[j, i] / U[i, i]
@@ -40,10 +40,3 @@ def LU(M, ligne, B):
     for i in AffichX.tolist():
         print("x[{}]=".format(j), Fraction(*i).limit_denominator(), end='  ')
         j += 1
-
-
-"""A = np.array([[1,2,-1],[2,1,1],[1,0,2]])
-
-x = [0,0,0]
-b = [5,10,0]
-LU(A,3,b)"""

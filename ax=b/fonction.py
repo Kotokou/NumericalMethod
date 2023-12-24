@@ -340,5 +340,3 @@ def symetrique(matrice):  # vérifier si la matrice est symétrique  CHECKED
         print("--->La matrice n'est pas Symétrique\n")
         return False
 
-# print(transpose([[1,2,3], [4,5,6], [7, 8, 9]], 3))
-# print(triangular_lift([[1, -1/3, 2/3,4], [0, 1, 1, 3], [0, 0, 1, 2]]))

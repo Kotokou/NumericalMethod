@@ -36,12 +36,3 @@ def cholesky(M, ligne, colonne, B):
     else:
         print("La matrice n'est pas symétrique ou/et n'est pas definie positive ")
 
-
-A = np.array([
-    [3, 0, 0],
-    [1, 2, 0],
-    [3, 2, 1]
-])
-b = [9, 7, 14]
-x = [0, 0, 0]
-cholesky(A, 3, 3, b)

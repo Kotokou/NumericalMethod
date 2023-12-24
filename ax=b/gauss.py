@@ -6,8 +6,8 @@ lr = []
 
 def gauss(ligne, M, B, x):
     m = np.append(M, B, axis=1)
-    # methode Gauss
-    # echelonnement
+    # Méthode Gauss
+    # Echélonnement
     for i in range(ligne):
         for j in range(i):
             if m[j, j] == 0 or M[j, j] == 0:
@@ -18,7 +18,7 @@ def gauss(ligne, M, B, x):
                 M[i] = M[i] - M[i, j] / M[j, j] * M[j]
     B = m[:, -1]
     x[ligne - 1] = B[ligne - 1] / M[ligne - 1, ligne - 1]
-    # remontée
+    # Remontée
     k, S = 1, 0
     for i in range(ligne - 2, -1, -1):
         for j in range(k):
